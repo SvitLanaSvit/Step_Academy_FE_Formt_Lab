@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style2.css">
+</head>
+<body>
+    <main class="main">
+        <form action="get" class="form">
+            <div>
+                <h1>Contact form</h1>
+            </div>
+            <div>
+                <p>Please fill in your information and we`ll be sending your order</p>
+            </div>
+            <div class="name">
+                <label>Your name</label>
+                <div class="wrapper">
+                    <input type="text" name="firstname" placeholder="first name"/>
+                    <input type="text" name="lasttname" placeholder="last name"/>
+                </div>
+            </div>
+            <div class="email">
+                <label>Your email</label>
+                <input type="email" name="email" placeholder="your_mail@mail.com"/>
+            </div>
+            <div class="phone">
+                <label>Phone *</label>
+                <div class="wrapper size">
+                    <input type="tel" name="tel" placeholder="000" min="0" max="999" required/>
+                    <input type="tel" name="tel" placeholder="000" required/>
+                    <input type="tel" name="tel" placeholder="0000" required/>
+                </div>
+            </div>
+            <div class="message_subject_main">
+                <label>Message subject *</label>
+                <select name="message_subject" required>
+                    <option value="other">Other</option>
+                    <option value="hello">Hello</option>
+                </select>
+            </div>
+            <div class="message_main">
+                <label>Message *</label>
+                <textarea name="message" id="messageArea" cols="30" rows="10" required></textarea>
+            </div>
+            <hr>
+            <div class="submit_form">
+                <input type="submit" value = "submit form">
+            </div>
+        </form>
+
+    </main>
+</body>
+</html>
